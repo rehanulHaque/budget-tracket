@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Budget Application</title>
+</head>
+<body>
+    <div class="grid">
+        <div class="budget">
+            <h1 class="heading">Budget</h1>
+            <input type="number" id="budget-amount">
+            <button id="budget-amount-btn">Add Budget</button>
+        </div>
+        <div class="expenses">
+            <h1 class="heading">Expenses</h1>
+            <input type="text" id="produce-title" placeholder="Enter the title of Product">
+            <input type="number" id="expenses-amount" placeholder="Enter the cost of Product">
+            <button id="expenses-amount-btn">Add Expenses</button>
+        </div>
+        <div class="total-balance">
+            <div class="">
+                <h2>Total Budget</h2>
+                <h2 id="total-budget-amount">0</h2>
+            </div>
+            <div class="">
+                <h2>Expenses</h2>
+                <h2 id="total-expenses-amount">0</h2>
+            </div>
+            <div class="">
+                <h2>Total Balance</h2>
+                <h2 id="total-balance-amount">0</h2>
+            </div>
+        </div>
+        <div class="expenses-list">
+            <h2>Expenses List</h2>
+            <div id="list-item"></div>
+            <!-- <p>20 rs - milk and tost</p> -->
+        </div>
+    </div>
+</body>
+</html>

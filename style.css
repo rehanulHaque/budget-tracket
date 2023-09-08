@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primary-clr: #7585DE;
+    --secondary-clr: #fff;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid{
+    display: grid;
+    gap: 2rem;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 8rem ;
+}
+.grid > div{
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+.budget{
+    /* height: 180px; */
+    width: 100%;
+    padding: .8rem;
+
+}
+.budget input, .expenses input{
+    padding: 5px 8px;
+    outline: 0;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary-clr);
+    display: block;
+    margin: 5px 0;
+    width: 200px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+}
+.budget button, .expenses button{
+    padding: 5px 8px;
+    background-color: var(--primary-clr);
+    outline: 0;
+    border: none;
+    color: var(--secondary-clr);
+    border-radius: 8px;
+    margin-top: .4rem;
+    cursor: pointer;
+}
+.expenses{
+    /* height: 180px; */
+    width: 100%;
+    padding: .8rem;
+
+}
+.total-balance{
+    /* height: 100px; */
+    padding: .5rem;
+    background: var(--primary-clr);
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.total-balance div h2{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.total-balance div h2:nth-child(2){
+    margin-top: .5rem;
+}
+.expenses-list{
+    padding: 1rem;
+    grid-column: span 2;
+}
+
+.expenses-list h1{
+    font-size: 2rem;
+}
+.expenses-list p{
+    margin-top: 1rem;
+}
